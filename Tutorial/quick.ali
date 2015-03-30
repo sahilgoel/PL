@@ -1,0 +1,118 @@
+V "GNAT Lib v2013"
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IO
+RV NO_RECURSION
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_TASK_HIERARCHY
+RV NO_TASKING
+RV NO_DEFAULT_INITIALIZATION
+RV SPARK
+RV MAX_TASKS=1+
+
+U quick%b		quick.adb		3450fda2 NE OO PK IL
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W system%s		system.ads		system.ali
+W system.parameters%s	s-parame.adb		s-parame.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.task_info%s	s-tasinf.adb		s-tasinf.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+W system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+U quick%s		quick.ads		401c285a EE NE OO PK IL
+
+D ada.ads		20130417131023 3ffc8e18
+D a-except.ads		20130417131019 10fcae55
+D a-finali.ads		20130417131020 52ecdc1b
+D a-inteio.ads		20130417131020 f64b89a4
+D a-ioexce.ads		20130417131020 8b9de6cd
+D a-reatim.ads		20130417131021 63f07669
+D a-stream.ads		20130417131021 2ca4ee37
+D a-tags.ads		20130417131022 6c0509d0
+D a-textio.ads		20130417131022 386df5d4
+D a-tiinio.ads		20130417131022 aa04e5d6
+D a-unccon.ads		20130417131022 f9eb8f06
+D interfac.ads		20130417131027 cb4a8015
+D i-c.ads		20130417131026 5421119b
+D i-cstrea.ads		20130417131026 8128536b
+D quick.ads		20140927172836 401c285a
+D quick.adb		20140927174559 ba6aa988
+D system.ads		20130417131036 f2f2d889
+D s-atacco.ads		20130417131028 4c36d12f
+D s-crtl.ads		20130417131029 dfcfca61
+D s-exctab.ads		20130417131029 66e51330
+D s-ficobl.ads		20130417131029 55a71d43
+D s-finmas.ads		20130417131029 b95bb341
+D s-finroo.ads		20130417131029 4ff27390
+D s-multip.ads		20130417131030 38ac9f73
+D s-oscons.ads		20130603160047 d2b348ca
+D s-osinte.ads		20130417131031 a671a606
+D s-parame.ads		20130417131032 b6e20cc0
+D s-pooglo.ads		20130417131032 542f33d0
+D s-soflin.ads		20130417131032 24c8153c
+D s-stache.ads		20130417131032 596fc1b4
+D s-stausa.ads		20130417131032 017a0a05
+D s-stalib.ads		20130417131032 f78bcf95
+D s-stoele.ads		20130417131032 facd7d98
+D s-stoele.adb		20130417131032 afc5dc80
+D s-stopoo.ads		20130417131032 7b8fbeee
+D s-tasinf.ads		20130417131033 e120e23a
+D s-taspri.ads		20130417131033 15f617a8
+D s-taprop.ads		20130417131033 1dd2e1b6
+D s-taskin.ads		20130417131033 59e95256
+D s-tassta.ads		20130417131033 70812003
+D s-traent.ads		20130417131033 5221ee41
+D s-unstyp.ads		20130417131034 6ae15c76
+D s-wchcon.ads		20130417131034 bfeb2e3d
+X 1 ada.ads
+16K9*Ada 19e8 16|1r6 2r5 3r6 4r5
+X 4 a-inteio.ads
+18K13*Integer_Text_IO[10|45] 16|3w10 4r9
+X 9 a-textio.ads
+49K13*Text_IO 471e16 16|1w10 2r9
+X 15 quick.ads
+1K9*quick 6l5 6e10 16|6b14 125l5 125t10
+3I9*nrange{integer} 4r30
+4A6*arr(3I9)<integer> 5r31 16|9r30 11r30 90r33 94r34
+5U11*quicksort 5=21 5>36 5>53 16|90b12 102s25 109s25 123l7 123t16
+5a21 a{4A6} 16|90b22 121m20 121r20 122m17
+5i36 l{integer} 16|90b39 121r22 122r20
+5i53 n{integer} 16|90b56 121r24 122r23
+X 16 quick.adb
+9V10 partition{integer} 9=20 9>36 9>53 11b10 86l5 86t14 121s10
+9a20 a{15|4A6} 11b20 26r13 26r19 26r30 26r36 26r52 26r58 26r69 26r75 27r14
+. 31r13 31r21 31r30 31r38 31r54 31r62 31r77 31r85 32r14 37r13 37r25 37r34
+. 37r46 37r58 37r70 37r79 37r91 38r10 44r20 44r25 45r22 48r22 58r31 61r31
+. 68r36 71r36 75r31 76m25 76r31 77m25
+9i36 l{integer} 11b36 21r12 26r15 26r32 26r41 26r54 26r71 26r80 27r16 28r19
+. 31r23 31r43 31r67 31r87 37r18 37r27 37r39 37r63 37r72 37r84 38r15 39r18
+. 42r12 44r22 45r24 46r27 54r14
+9i53 n{integer} 11b53 21r14 26r21 26r39 26r60 26r78 31r15 31r32 31r41 31r56
+. 31r65 31r79 32r16 33r19 37r16 37r37 37r48 37r61 37r82 37r93 38r13 39r16
+. 42r14 44r27 48r24 49r27 55r14
+12i9 med{integer} 27m9 32m9 38m5 45m17 48m17 58r37 61r36 68r41 71r41
+13i9 i{integer} 54m9 57r15 58r33 59m33 59r36 66r28 68r38 72r43 75r33 76r27
+. 84r15
+13i11 j{integer} 55m9 57r17 61r33 62m33 62r36 66r30 69r43 71r38 76r33 77r27
+13i13 part{integer} 84m9 85r8
+14i9 flag{integer} 34m9
+15i9 temp{integer} 75m25 77r31
+15i14 medindex{integer} 28m9 33m9 39m5 46m17 49m17 69m33 72m33
+91i3 p{integer} 121m5 122r26
+94U11 quicksort_2 94b11 94=23 94>39 94>56 94>73 117l29 117t40 122s5
+94a23 a{15|4A6} 102m35 109m35
+94i39 l{integer} 101r30 102r37
+94i56 n{integer} 108r28 109r41
+94i73 p{integer} 101r28 101r36 102r39 108r30 108r38 109r37
+96t30 one 99b35 104t28
+97t30 two 106b35 111t28
+X 31 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+

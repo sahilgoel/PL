@@ -1,0 +1,45 @@
+<p>
+	&nbsp;</p>
+<p>
+	<strong>Installing Ada on Mac OS X (Mountain Lion or later)</strong></p>
+<p>
+	To install Ada on your Mac, perform the following steps:</p>
+<p>
+	1) Go to <a href="http://libre.adacore.com/download/configurations">http://libre.adacore.com/download/configurations</a> and, in the middle of the page, where it says &quot;Select your platform&quot;, choose &quot;x86-64 Mac OS X (64 bits)&quot; and &quot;GNAT GPL 2013&quot; (yes, 2013 not 2014)</p>
+<p>
+	2) Expand the portion labeled &quot;GNAT Ada GPL 2013 &quot; and click on the link that says &quot; gnat-gpl-2013-x86_64-apple-darwin12.2.0-bin.tar.gz&quot; to download and save the file on your computer. Then, uncompress the downloaded file.</p>
+<p>
+	3) In a shell (e.g. terminal or under emacs), navigate down into the resulting directory until you see the files README, doinstall, etc.&nbsp; Then, type,</p>
+<p>
+	sudo ./doinstall</p>
+<p>
+	You will be asked for the administrator password (which is likely just your password on your Mac).&nbsp; You should accept the default directory in which the files are to installed.</p>
+<p>
+	4)&nbsp; Once the installation has completed (and the files are in /usr/local/gnat), you will need to add &quot;/usr/local/gnat/bin&quot; to the front of the PATH environment variable.&nbsp; To do this, you can put one of the following lines in your shell configuration files (e.g. .bashrc, .cshrc, etc.)</p>
+<p>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PATH=/usr/local/gnat/bin:$PATH; export PATH&nbsp; (Bourne shell)<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; setenv PATH /usr/local/gnat/bin:$PATH&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (C shell)</p>
+<p>
+	&nbsp;</p>
+<p>
+	<strong>Testing the compiler</strong></p>
+<p>
+	In the Ada resources folder, click on &quot;Simple Ada program to test compiler&quot;.&nbsp; A zip file will be downloaded.&nbsp; When you unzip it, you will see several files with .ads and .adb extensions.&nbsp; In a shell, go to the directory containing the files. Then type,</p>
+<p>
+	gnatmake objmain.adb</p>
+<p>
+	You will see that gcc is invoked several times, along with gnatbind and gnatlink.</p>
+<p>
+	Note:&nbsp; If, the first time you try compiling an Ada program using &quot;gnatmake&quot;, you get an error complaining about a missing library, be sure that your command line tools for OS X are up to date.&nbsp;&nbsp; Go to <a href="https://developer.apple.com/downloads/">https://developer.apple.com/downloads/</a> and download and install the &quot;Command Line Tools&quot; for your version of Mac OS X.&nbsp; Then, try running &quot;gnatmake objmain.adb&quot; again.</p>
+<p>
+	To run the program, type</p>
+<p>
+	./objmain</p>
+<p>
+	(you won't need the &quot;./&quot; if your PATH environment variable contains &quot;.&quot;)</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>

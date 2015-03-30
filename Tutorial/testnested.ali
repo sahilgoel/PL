@@ -1,0 +1,62 @@
+V "GNAT Lib v2013"
+M P W=b
+P ZX
+
+RN
+RV NO_IO
+RV SPARK
+
+U proced2%b		testnested.adb		9e7d35f2 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+D ada.ads		20130417131023 3ffc8e18
+D a-except.ads		20130417131019 10fcae55
+D a-finali.ads		20130417131020 52ecdc1b
+D a-inteio.ads		20130417131020 f64b89a4
+D a-ioexce.ads		20130417131020 8b9de6cd
+D a-stream.ads		20130417131021 2ca4ee37
+D a-tags.ads		20130417131022 6c0509d0
+D a-textio.ads		20130417131022 386df5d4
+D a-tiinio.ads		20130417131022 aa04e5d6
+D a-unccon.ads		20130417131022 f9eb8f06
+D interfac.ads		20130417131027 cb4a8015
+D i-cstrea.ads		20130417131026 8128536b
+D testnested.adb	20140925222937 505b4982
+D system.ads		20130417131036 f2f2d889
+D s-crtl.ads		20130417131029 dfcfca61
+D s-exctab.ads		20130417131029 66e51330
+D s-ficobl.ads		20130417131029 55a71d43
+D s-finmas.ads		20130417131029 b95bb341
+D s-finroo.ads		20130417131029 4ff27390
+D s-parame.ads		20130417131032 b6e20cc0
+D s-pooglo.ads		20130417131032 542f33d0
+D s-soflin.ads		20130417131032 24c8153c
+D s-stache.ads		20130417131032 596fc1b4
+D s-stalib.ads		20130417131032 f78bcf95
+D s-stoele.ads		20130417131032 facd7d98
+D s-stoele.adb		20130417131032 afc5dc80
+D s-stopoo.ads		20130417131032 7b8fbeee
+D s-traent.ads		20130417131033 5221ee41
+D s-unstyp.ads		20130417131034 6ae15c76
+D s-wchcon.ads		20130417131034 bfeb2e3d
+X 1 ada.ads
+16K9*Ada 19e8 13|1r6 1r19 2r5 2r18
+X 4 a-inteio.ads
+18K13*Integer_Text_IO[9|45] 13|1w23 2r22
+X 8 a-textio.ads
+49K13*Text_IO 471e16 13|1w10 2r9
+166U14*New_Line 13|12s7 25s7
+242U14*Put 13|11s7 17s7
+263U14*Put_Line 13|19s7 26s7
+X 9 a-tiinio.ads
+65U14*Put 13|18s7[4|18]
+X 13 testnested.adb
+4U11*Proced2 4b11 35l5 35t12
+6i4 Counter{integer} 10m7 18r11 20m7 20r18
+8U14 Write_A_Header 8b14 13l8 13t22 30s4
+15U14 Write_And_Increment 15b14 21l8 21t27 32s7
+23U14 Write_An_Ending_Statement 23b14 27l8 27t33 34s4
+31i8 Index{integer}
+

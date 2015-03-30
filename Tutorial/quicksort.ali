@@ -1,0 +1,90 @@
+V "GNAT Lib v2013"
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IO
+RV NO_RECURSION
+RV SPARK
+
+U quick%b		quicksort.adb		9d48154d NE OO PK IL
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+U quick%s		quick.ads		29073ec5 EE NE OO PK IL
+
+D ada.ads		20130417131023 3ffc8e18
+D a-except.ads		20130417131019 10fcae55
+D a-finali.ads		20130417131020 52ecdc1b
+D a-inteio.ads		20130417131020 f64b89a4
+D a-ioexce.ads		20130417131020 8b9de6cd
+D a-stream.ads		20130417131021 2ca4ee37
+D a-tags.ads		20130417131022 6c0509d0
+D a-textio.ads		20130417131022 386df5d4
+D a-tiinio.ads		20130417131022 aa04e5d6
+D a-unccon.ads		20130417131022 f9eb8f06
+D interfac.ads		20130417131027 cb4a8015
+D i-cstrea.ads		20130417131026 8128536b
+D quick.ads		20140925221524 29073ec5
+D quicksort.adb		20140925230034 7a6957f8
+D system.ads		20130417131036 f2f2d889
+D s-crtl.ads		20130417131029 dfcfca61
+D s-exctab.ads		20130417131029 66e51330
+D s-ficobl.ads		20130417131029 55a71d43
+D s-finmas.ads		20130417131029 b95bb341
+D s-finroo.ads		20130417131029 4ff27390
+D s-parame.ads		20130417131032 b6e20cc0
+D s-pooglo.ads		20130417131032 542f33d0
+D s-soflin.ads		20130417131032 24c8153c
+D s-stache.ads		20130417131032 596fc1b4
+D s-stalib.ads		20130417131032 f78bcf95
+D s-stoele.ads		20130417131032 facd7d98
+D s-stoele.adb		20130417131032 afc5dc80
+D s-stopoo.ads		20130417131032 7b8fbeee
+D s-traent.ads		20130417131033 5221ee41
+D s-unstyp.ads		20130417131034 6ae15c76
+D s-wchcon.ads		20130417131034 bfeb2e3d
+X 1 ada.ads
+16K9*Ada 19e8 14|1r6 2r5 3r6 4r5
+X 4 a-inteio.ads
+18K13*Integer_Text_IO[9|45] 14|3w10 4r9
+X 8 a-textio.ads
+49K13*Text_IO 471e16 14|1w10 2r9
+166U14*New_Line 14|85s9 110s5 115s9 118s5 127s5
+242U14*Put 14|103s25
+X 13 quick.ads
+1K9*quick 7l5 7e10 14|6b14 135l5 135t10
+3I9*nrange{integer} 4r29
+4A6*arr(3I9)<integer> 5r31 14|9r31 11r30 96r33 100r34
+5U11*quicksort 5=21 5>36 5>53 14|96b12 117s5 126s5 131t6
+5a21 a{4A6} 14|96b22 109m20 109r20 117m15 126m15
+5i36 l{integer} 14|96b39 109r22 112r14 117r17
+5i53 n{integer} 14|96b56 109r24 122r8 126r21
+X 14 quicksort.adb
+9V11 partition{integer} 9=21 9>37 9>54 11b10 90l5 90t14 109s10
+9a21 a{13|4A6} 11b20 26r13 26r19 26r30 26r36 26r52 26r58 26r69 26r75 27r14
+. 31r13 31r21 31r30 31r38 31r54 31r62 31r77 31r85 32r14 37r13 37r25 37r34
+. 37r46 37r58 37r70 37r79 37r91 38r10 44r20 44r25 45r22 48r22 58r31 61r31
+. 68r36 71r36 75r31 76m25 76r31 77m25
+9i37 l{integer} 11b36 21r12 26r15 26r32 26r41 26r54 26r71 26r80 27r16 28r19
+. 31r23 31r43 31r67 31r87 37r18 37r27 37r39 37r63 37r72 37r84 38r15 39r18
+. 42r12 44r22 45r24 46r27 54r14
+9i54 n{integer} 11b53 21r14 26r21 26r39 26r60 26r78 31r15 31r32 31r41 31r56
+. 31r65 31r79 32r16 33r19 37r16 37r37 37r48 37r61 37r82 37r93 38r13 39r16
+. 42r14 44r27 48r24 49r27 55r14
+12i1 med{integer} 27m9 32m9 38m5 45m17 48m17 58r37 61r36 68r41 71r41
+13i9 i{integer} 54m9 57r15 58r33 59m33 59r36 66r28 68r38 72r43 75r33 76r27
+. 84r15
+13i11 j{integer} 55m9 57r17 61r33 62m33 62r36 66r30 69r43 71r38 76r33 77r27
+13i13 part{integer} 84m9 88r8
+14i9 flag{integer} 34m9
+15i9 temp{integer} 75m25 77r31
+15i14 medindex{integer} 28m9 33m9 39m5 46m17 49m17 69m33 72m33
+97i3 p{integer} 109m5 112r12 112r20 117r19 122r10 122r18 126r17
+98i3 i{integer}
+100U11 quicksort_2 100b11 100=23 100>39 100>56 104t28
+100a23 a{13|4A6}
+100i39 l{integer}
+100i56 n{integer}
+
